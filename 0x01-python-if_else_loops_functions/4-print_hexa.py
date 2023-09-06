@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-for i in range(0, 99):
-    print(f'{i} = 0x{i:02x}') 
+for num in range(0, 99):
+    print("{:d} = 0x{:x}".format(num, num))

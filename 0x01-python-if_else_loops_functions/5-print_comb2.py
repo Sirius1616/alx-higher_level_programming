@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-for i in range(0, 100):
+for i in range(00, 100):
     print(f"{i:02}", end='\n' if i == 99 else ", ")

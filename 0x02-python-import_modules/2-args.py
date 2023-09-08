@@ -7,8 +7,8 @@ if __name__ == '__main__':
         print("{} arguments.".format(count))
     elif count == 1:
         print("{} argument:".format(count))
-        print("{} : {}".format(count, arg[1]))
+        print("{}: {}".format(count, arg[1]))
     else:
         print("{} arguments:".format(count))
         for i in range(1, count + 1):
-            print("{} : {}".format(i, arg[i]))
+            print("{}: {}".format(i, arg[i]))

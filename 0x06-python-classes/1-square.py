@@ -8,4 +8,4 @@ class square:
     def __init__(self, size):
         """attributes of the instantiation is here"""
 
-        self.size = size
+        pass

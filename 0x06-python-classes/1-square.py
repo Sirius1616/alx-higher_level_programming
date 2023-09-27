@@ -2,7 +2,7 @@
 """A class definition for square"""
 
 
-class square:
+class Square:
     """Instantiation of the square with size base on 0-square.py
        Attributes:
             size: size of square

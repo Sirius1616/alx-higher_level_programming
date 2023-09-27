@@ -1,11 +1,18 @@
 #!/usr/bin/python3
-"""A class definition for square"""
+"""A class definition for square base on 0-square.py"""
 
 
 class square:
-    """Instantiation of the squre with size"""
+    """Instantiation of the squre with size
+        Attributes:
+            size: size of square
+        """
 
     def __init__(self, size):
-        """attributes of the instantiation is here"""
+        """creates a new instance of the square
+            Args:
+                size:one sided
 
-        pass
+            """
+
+        self.size = size

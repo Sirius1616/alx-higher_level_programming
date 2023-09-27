@@ -3,7 +3,7 @@
 
 
 class square:
-    """Instantiation of the squre with size base on 0-square.py
+    """Instantiation of the square with size base on 0-square.py
        Attributes:
             size: size of square
         """
@@ -14,4 +14,4 @@ class square:
 
             """
 
-        self.size = size
+        self.__size = size

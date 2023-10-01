@@ -1,18 +1,16 @@
 #!/usr/bin/python3
 class Square:
     """
-    class Square that defines a square by: (based on 1-square.py)
-   
-    Attribute:
-        size: the size of the square
+    Class that defines properties of square by: (based on 1-square.py).
+
+    Attributes:
+        size: size of a square (1 side).
     """
     def __init__(self, size=0):
-        """
-        Init function to initialize the parameters
+        """Creates new instances of square.
 
-        
         Args:
-            size  ----  the size of the square that would be measured in meter
+            size: size of the square (1 side).
         """
 
         try:

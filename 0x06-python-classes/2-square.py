@@ -12,6 +12,7 @@ class Square:
         Args:
             size: size of the square (1 side).
         """
+        self.__size = size
 
         try:
             if not isinstance(size, int):

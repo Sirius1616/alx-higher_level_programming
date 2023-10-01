@@ -21,5 +21,5 @@ class Square:
             else:
                 self.__size = size
 
-        except (TypeError, ValueError) as err:
-            print(err)
+        except (TypeError, ValueError):
+        

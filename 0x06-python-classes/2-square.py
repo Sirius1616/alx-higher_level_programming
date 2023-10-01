@@ -6,11 +6,10 @@ class Square:
     Attribute:
         size: the size of the square
     """
-
-
     def __init__(self, size=0):
         """
         Init function to initialize the parameters
+
         
         Args:
             size  ----  the size of the square that would be measured in meter

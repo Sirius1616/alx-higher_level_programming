@@ -1,15 +1,20 @@
 #!/usr/bin/python3
 class Square:
-    """A class for squaring based on 1-square.py"""
+    """
+    class Square that defines a square by: (based on 1-square.py)
+   
+    Attribute:
+        size: the size of the square
+    """
 
 
     def __init__(self, size=0):
-        """Init function to initialize the parameters
-        arguments:
+        """
+        Init function to initialize the parameters
+        
+        Args:
             size  ----  the size of the square that would be measured in meter
-
-        return:
-            there shall be no return value"""
+        """
 
         try:
             if not isinstance(size, int):

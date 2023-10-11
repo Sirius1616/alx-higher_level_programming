@@ -6,4 +6,4 @@ def read_file(filename=""):
     """
     with open('filename', 'r', encoding='utf-8) as file:
         rd_file = file.read()
-        print('{}'.format(rd_file))
+        print(rd_file, end="")

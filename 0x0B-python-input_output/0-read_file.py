@@ -4,6 +4,6 @@ def read_file(filename=""):
     """
     A function that reads a file
     """
-    with open('filename', 'r', encoding='utf-8) as file:
+    with open('filename', 'r', encoding='utf-8') as file:
         rd_file = file.read()
-        print(rd_file, end="")
+        print('{}'.format(rd_file))

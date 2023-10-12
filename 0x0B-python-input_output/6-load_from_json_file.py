@@ -13,3 +13,4 @@ def load_from_json_file(filename):
     """
     with open(filename, 'r') as file:
         rd_file = json.load(file)
+        return rd_file

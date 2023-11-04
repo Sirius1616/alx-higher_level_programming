@@ -32,5 +32,3 @@ class Square:
         """A function that returns th area of the square"""
 
         return (self.__size * self.__size)
-
-

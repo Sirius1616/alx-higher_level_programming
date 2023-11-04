@@ -1,9 +1,11 @@
 #!/usr/bin/python3
+"""A class for square"""
+
 class Square:
     """Class that defines properties of square by: (based on 1-square.py)."""
 
     def __init__(self, size=0):
-        """Creates new instances of square.
+        """Initialize a new square.
 
         Args:
             size(int): size of the square (1 side).

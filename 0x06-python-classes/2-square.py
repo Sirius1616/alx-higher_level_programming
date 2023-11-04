@@ -10,9 +10,8 @@ class Square:
         """Creates new instances of square.
 
         Args:
-            size: size of the square (1 side).
+            size(int): size of the square (1 side).
         """
-        self.__size = size
 
         if not isinstance(size, int):
             raise TypeError("size must be an integer")

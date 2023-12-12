@@ -1,3 +1,3 @@
 #!/usr/bin/node
 const myvar = Number(process.argv[2]);
-console.log(('My number: ' + myvar !== isNaN(myvar)) ? myvar : 'Not a number')
+console.log(!isNaN(myvar) ? 'My number: ' + myvar : 'Not a number');

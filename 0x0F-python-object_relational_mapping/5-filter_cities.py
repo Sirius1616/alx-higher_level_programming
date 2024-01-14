@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """states models
+   prints all city names
+   in ASCE of ID
 """
 if __name__ == "__main__":
     import MySQLdb
@@ -16,11 +18,13 @@ if __name__ == "__main__":
     )
     cursor = db.cursor()
 
-    cursor.execute("SELECT * FROM states ORDER BY id ASC")
+    cursor.execute("SELECT cities.name\
+                   FROM cities LEFT JOIN states\
+                   ON states.id = cities.state_id\
+                   WHERE states.name = %s\
+                   ORDER BY cities.id ASC", (sys.argv[4],))
+
     rows = cursor.fetchall()
-
-    for row in rows:
-        print(row)
-
+    print(", ".join([row[0] for row in rows]))
     cursor.close()
     db.close()

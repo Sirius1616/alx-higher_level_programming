@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """states models
+  taskes a value arguments and display values
+   in state table
 """
 if __name__ == "__main__":
     import MySQLdb
@@ -16,7 +18,9 @@ if __name__ == "__main__":
     )
     cursor = db.cursor()
 
-    cursor.execute("SELECT * FROM states ORDER BY id ASC")
+    cursor.execute("SELECT * FROM states WHERE name LIKE BINARY '{}'\
+                   ORDER BY states.id ASC".format(sys.argv[4]))
+
     rows = cursor.fetchall()
 
     for row in rows:

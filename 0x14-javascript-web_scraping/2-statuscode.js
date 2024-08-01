@@ -1,9 +1,9 @@
 #!/usr/bin/node
 
-const fs = require('fs');
+const request = require('request');
 const url = process.argv[2];
 
-fs.get(url, (error, response) => {
+request.get(url, (error, response) => {
     if (error){
         console.log(error);
     }
